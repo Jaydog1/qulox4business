@@ -281,99 +281,22 @@
         max-width: 560px;
         min-height: 560px;
         border-radius: 30px;
-        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-        border: 1px solid var(--panel-border);
-        box-shadow: 0 18px 40px rgba(11, 19, 35, 0.22);
+        background: transparent;
+        border: none;
+        box-shadow: none;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
       }
 
-      .bobby-wrap {
-        position: relative;
-        width: 300px;
-        height: 430px;
-      }
-
-      .bobby-head {
-        position: absolute;
-        left: 50%;
-        top: 10px;
-        transform: translateX(-50%);
-        width: 250px;
-        height: 210px;
-        background: #ebd8b2;
-        border-radius: 52% 48% 50% 50% / 57% 56% 44% 43%;
-        box-shadow: inset -12px -10px 0 rgba(0,0,0,0.04);
-      }
-
-      .eye {
-        position: absolute;
-        top: 70px;
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 50%;
-      }
-
-      .eye.left {
-        left: 42px;
-      }
-
-      .eye.right {
-        right: 42px;
-      }
-
-      .eye::before {
-        content: "";
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        background: #171717;
-        border-radius: 50%;
-        left: 16px;
-        top: 15px;
-      }
-
-      .mouth {
-        position: absolute;
-        left: 50%;
-        bottom: 26px;
-        transform: translateX(-50%);
-        width: 120px;
-        height: 55px;
-        border-bottom: 7px solid rgba(0,0,0,0.85);
-        border-radius: 0 0 80px 80px;
-      }
-
-      .bobby-body {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 180px;
-        height: 180px;
-        background: #5cc6f5;
-        border-radius: 52% 48% 40% 60% / 52% 54% 46% 48%;
-      }
-
-      .bobby-leg {
-        position: absolute;
-        width: 18px;
-        height: 90px;
-        background: rgba(0,0,0,0.15);
-        border-radius: 12px;
-        bottom: 6px;
-      }
-
-      .bobby-leg.left {
-        left: 92px;
-        transform: rotate(20deg);
-      }
-
-      .bobby-leg.right {
-        right: 92px;
-        transform: rotate(-20deg);
+      .bobby-image {
+        display: block;
+        width: 100%;
+        max-width: 540px;
+        height: auto;
+        object-fit: contain;
+        background: transparent;
       }
 
       .hidden {
@@ -459,16 +382,7 @@
 
           <div class="mascot-panel">
             <div class="mascot-card">
-              <div class="bobby-wrap">
-                <div class="bobby-head">
-                  <div class="eye left"></div>
-                  <div class="eye right"></div>
-                  <div class="mouth"></div>
-                </div>
-                <div class="bobby-body"></div>
-                <div class="bobby-leg left"></div>
-                <div class="bobby-leg right"></div>
-              </div>
+              <img src="BobbyBobertson.png" alt="Bobby Robertson mascot" class="bobby-image" />
             </div>
           </div>
         </section>
